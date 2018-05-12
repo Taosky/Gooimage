@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Gooimage: google-image-search in sidebar",
+    "description": "Add a context menu option to search images in sidebar.",
+    "version": "1.4",
+    "homepage_url": "https://mou.science",
+    "sidebar_action": {
+        "default_icon": "icons/google.png",
+        "default_title": "Gooimage",
+        "default_panel": "sidebar/panel.html",
+        "browser_style": true
+    },
+   "content_scripts": [
+     {
+       "matches": ["*://www.google.com/*","*://www.google.com.hk/*","*://www.google.co.jp/*","*://www.google.cn/*","*://www.google.ca/*","*://www.google.de/*","*://www.google.com.tw/*","*://www.google.com.ru/*","*://www.google.al/*","*://www.google.dz/*","*://www.google.af/*","*://www.google.ar/*","*://www.google.ae/*","*://www.google.aw/*","*://www.google.au/*","*://www.google.mo/*","*://www.google.ie/*","*://www.google.by/*","*://www.google.pl/*","*://www.google.ru/*","*://www.google.fr/*","*://www.google.fi/*","*://www.google.kr/*","*://www.google.nl/*","*://www.google.us/*","*://www.google.mx/*","*://www.google.za/*","*://www.google.eu/*","*://www.google.pt/*","*://www.google.ch/*","*://www.google.se/*","*://www.google.sa/*","*://www.google.com.sg/*","*://www.google.co.in/*","*://www.google.co.uk/*"],
+       "css": ["fixgoogle.css"],
+       "run_at": "document_start"
+     }
+    ],
+    
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "permissions": [
+        "contextMenus",
+        "tabs"
+    ]
+}

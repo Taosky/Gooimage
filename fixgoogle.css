@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px) {
+    #hdtb-msb > .hdtb-mitem:first-child, .ab_tnav_wrp, #cnt #center_col, .mw #center_col,#iur {
+    	margin-left:1px;
+        width:410px;
+    }
+    #top_nav,.sfbgx,#searchform,#sform,#fbarcnt{display:none;}
+    #cnt #foot{width:auto;}
+    .g .s .f{max-width: 320px;overflow: hidden;text-overflow: ellipsis;}
+}
